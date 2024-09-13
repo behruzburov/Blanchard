@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Blanchard - художественная галерея</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">
+        <picture>
+          <source srcset="./img/logo-mobile.svg" media="(max-width: 767px)">
+          <source srcset="./img/logo-tablet.svg" media="(max-width: 1024px)">
+          <img src="./img/logo-desktop.svg" alt="Художественная галерея Бленчард">
+        </picture>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list list-reset">
+          <li class="header__item">
+            <a href="#about-us" class="header__link">
+              О&nbsp;нас
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#gallery" class="header__link">
+              Галерея
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#catalog" class="header__link">
+              Каталог
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#events" class="header__link">
+              События
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#projects" class="header__link">
+              Проекты
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn" aria-label="Поиск">
+        <svg class="header__btn-svg" width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="8.795645" height="2.198911"
+            transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="none"
+            fill-opacity="1.000000" />
+          <path
+            d="M15.32 23.31C9.54 23.31 5.06 18.54 5.06 12.95C5.06 7.35 9.54 2.59 15.32 2.59C21.11 2.59 25.59 7.35 25.59 12.95C25.59 18.54 21.11 23.31 15.32 23.31ZM15.32 25.9C8.33 25.9 2.65 20.1 2.65 12.95C2.65 5.79 8.33 0 15.32 0C22.32 0 28 5.79 28 12.95C28 20.1 22.32 25.9 15.32 25.9Z"
+            fill="none" fill-opacity="1.000000" fill-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Прикоснитесь к&nbsp;прекрасному
+          </h1>
+          <p class="hero__descr">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+            предложений
+          </p>
+          <a href="#contacts" class="hero__btn">
+            Подписаться на&nbsp;рассылку
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <h2 class="about-us__title section-title">
+          О&nbsp;нас
+        </h2>
+        <p class="about-us__descr section-descr">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+          участника как способного принимать собственные решения касаемо распределения внутренних резервов
+          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+          за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+          высокое качество позиционных исследований создаёт необходимость включения в производственный план целого
+          ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
+          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+          среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="gallery__title section-title">
+          Галерея
+        </h2>
+        <div class="gallery-wrapper">
+          <div class="gallery__checkbox">
+            <label class="gallery__check section-descr">
+              <input class="gallery__check-input" type="checkbox">
+              <span class="gallery__check-text">
+                XIX век
+              </span>
+            </label>
+            <label class="gallery__check section-descr">
+              <input class="gallery__check-input" type="checkbox">
+              <span class="gallery__check-text">
+                XX&nbsp;век
+              </span>
+            </label>
+            <label class="gallery__check section-descr">
+              <input class="gallery__check-input" type="checkbox">
+              <span class="gallery__check-text">
+                Современность
+              </span>
+            </label>
+          </div>
+          <ul class="gallery__list-images list-reset">
+            <li class="gallery__item-images">
+              <picture class="gallery__picture">
+                <source srcset="./img/gallery-mobile-1.jpeg" media="(max-width: 768px)">
+                <source srcset="./img/gallery-pic-1-768.jpeg" media="(max-width: 992px)">
+                <source srcset="./img/tablet1.jpeg" media="(max-width: 1440px)">
+                <img src="./img/gallery-desktop-1.jpeg" alt="На картине изображён человек" class="gallery-img">
+              </picture>
+            </li>
+            <li class="gallery__item-images">
+              <picture class="gallery__picture">
+                <source srcset="./img/gallery-mobile-2.jpeg" media="(max-width: 768px)">
+                <source srcset="./img/gallery-pic-2-768.jpeg" media="(max-width: 992px)">
+                <source srcset="./img/tablet2.jpeg" media="(max-width: 1440px)">
+                <img src="./img/gallery-desktop-2.jpeg" alt="На картине изображён человек у моря" class="gallery-img">
+              </picture>
+            </li>
+            <li class="gallery__item-images">
+              <picture class="gallery__picture">
+                <source srcset="./img/gallery-mobile-3.jpeg" media="(max-width: 768px)">
+                <source srcset="./img/gallery-pic-3-768.jpeg" media="(max-width: 992px)">
+                <source srcset="./img/tablet3.jpeg" media="(max-width: 1440px)">
+                <img src="./img/gallery-desktop-3.jpeg" alt="На картине изображёны люди работающие на поле"
+                  class="gallery-img">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="catalog__title section-title">
+          Каталог
+        </h2>
+        <p class="catalog__descr section-descr">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-&nbsp;европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего
+          лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей
+          день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="catalog__designers">
+          <ul class="catalog-list list-reset">
+            <li class="catalog-item">
+              <picture class="designers-pic">
+                <source media="(max-width: 768px)" srcset="./img/catalog-img-mobile-1.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/catalog-img-768-1.jpeg">
+                <source media="(max-width: 1024px)" srcset="./img/catalog-img-1024-1.jpeg">
+                <img src="./img/catalog-img-1920-1.jpeg" alt="Художник Доменико Гирландайо" class="designer-img">
+              </picture>
+              <div class="designer-descr">
+                <h3 class="designer-title">
+                  Доменико Гирландайо
+                </h3>
+                <span class="designer-birthdate">
+                  2&nbsp;июня 1448&ndash;11 января 1494
+                </span>
+                <p class="designer-manual section-descr">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                  в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                  выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                  (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                </p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <picture class="designers-pic">
+                <source media="(max-width: 768px)" srcset="./img/catalog-img-mobile-2.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/catalog-img-768-2.jpeg">
+                <source media="(max-width: 1024px)" srcset="./img/catalog-img-1024-2.jpeg">
+                <img src="./img/catalog-img-1920-2.jpeg" alt="Художник Андреа дель Верроккьо" class="designer-img">
+              </picture>
+              <div class="designer-descr">
+                <h3 class="designer-title">
+                  Андреа дель&ndash;Верроккьо
+                </h3>
+                <span class="designer-birthdate">
+                  1435&ndash;10 октября 1488
+                </span>
+                <p class="designer-manual section-descr">
+                  Творческий путь молодого Андреа, как и&nbsp;многих знаменитых художников и&nbsp;скульпторов эпохи
+                  Возрождения, начался с&nbsp;обучения и&nbsp;работы в&nbsp;одной из&nbsp;ювелирных мастерских
+                  Флоренции. Там он&nbsp;занимался не&nbsp;только изготовлением драгоценных украшений,
+                  но&nbsp;и&nbsp;познавал основы живописи, пластики и&nbsp;архитектуры. Его первым учителем был Джулиано
+                  Веррокки, фамилию которого в&nbsp;несколько изменённом виде Андреа заимствовал для своего будущего
+                  псевдонима.
+                </p>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <picture class="designers-pic">
+                <source media="(max-width: 768px)" srcset="./img/catalog-img-mobile-3.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/catalog-img-768-3.jpeg">
+                <source media="(max-width: 1024px)" srcset="./img/catalog-img-1024-3.jpeg">
+                <img src="./img/catalog-img-1920-3.jpeg" alt="Художник Лоренцо ди Креди" class="designer-img">
+              </picture>
+              <div class="designer-descr">
+                <h3 class="designer-title">
+                  Лоренцо ди Креди
+                </h3>
+                <span class="designer-birthdate">
+                  1459&ndash;12 января 1537
+                </span>
+                <p class="designer-manual section-descr">
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+                  в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                  выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей
+                  (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="container">
+        <h2 class="events__title section-title">
+          События
+        </h2>
+        <ul class="events__list list-reset">
+          <li class="events__item">
+            <article class="events__article">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./img/events-mobile-1.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/events-768-1.jpeg">
+                <source media="(max-width: 1440px)" srcset="./img/events-1024-1.jpeg">
+                <img src="./img/events-1920-1.jpeg" class="article-img" alt="" aria-hidden="true">
+              </picture>
+              <div class="article-wrapper">
+                <div class="article-text">
+                  <div class="article-info">
+                    <span class="article-info-descr">
+                      Музей им. Щусева
+                    </span>
+                    <span class="article-info-descr">
+                      с 20 марта по 30 апреля
+                    </span>
+                  </div>
+                  <h3 class="article-title">
+                    Книжная гравюра в живом восприятии
+                  </h3>
+                  <p class="article-descr section-descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                    которую продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+                </div>
+                <a href="#" class="article-btn">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </li>
+          <li class="events__item">
+            <article class="events__article">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./img/events-mobile-2.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/events-768-2.jpeg">
+                <source media="(max-width: 1440px)" srcset="./img/events-1024-2.jpeg">
+                <img src="./img/events-1920-2.jpeg" class="article-img" alt="" aria-hidden="true">
+              </picture>
+              <div class="article-wrapper">
+                <div class="article-text">
+                  <div class="article-info">
+                    <span class="article-info-descr">
+                      ММОМА
+                    </span>
+                    <span class="article-info-descr">
+                      24 марта 19:00
+                    </span>
+                  </div>
+                  <h3 class="article-title">
+                    &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей Ильин.
+                  </h3>
+                  <p class="article-descr section-descr">
+                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                    факта
+                  </p>
+                </div>
+                <a href="#" class="article-btn">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </li>
+          <li class="events__item">
+            <article class="events__article">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./img/events-mobile-3.jpeg">
+                <source media="(max-width: 992px)" srcset="./img/events-768-3.jpeg">
+                <source media="(max-width: 1440px)" srcset="./img/events-1024-3.jpeg">
+                <img src="./img/events-1920-3.jpeg" class="article-img" alt="" aria-hidden="true">
+              </picture>
+              <div class="article-wrapper">
+                <div class="article-text">
+                  <div class="article-info">
+                    <span class="article-info-descr">
+                      Еврейский музей
+                    </span>
+                    <span class="article-info-descr">
+                      с 31 марта по 21 апреля
+                    </span>
+                  </div>
+                  <h3 class="article-title">
+                    Выставка &laquo;Формация 2020&raquo;
+                  </h3>
+                  <p class="article-descr section-descr">
+                    Идейные соображения высшего порядка, а также современная методология разработки играет важную
+                    роль в формировании глубокомысленных рассуждений
+                  </p>
+                </div>
+                <a href="#" class="article-btn">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="projects__title section-title">
+          Проекты
+        </h2>
+        <p class="projects__descr section-descr">
+          Предварительные выводы: постоянное информационно-&nbsp;пропагандистское обеспечение нашей деятельности
+          однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
+          с&nbsp;не&nbsp;уникальными данными до степени совершённой неузнаваемости, из-&nbsp;за чего возрастает
+          их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-&nbsp;пропагандистское обеспечение нашей
+          деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
+          сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в&nbsp;разрезе
+          маркетинговых и&nbsp;финансовых &nbsp;предпосылок. Банальные, но неопровержимые выводы, а&nbsp;также
+          представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
+          очередь, должны быть смешаны с не уникальными данными до&nbsp;степени совершённой неузнаваемости.
+        </p>
+        <div class="projects__partners">
+          <h3 class="projects__partners-title">
+            Партнёры проектов:
+          </h3>
+          <div class="projects__partners__logo">
+            <div class="partners-img">
+              <picture>
+                <source srcset="./img/partners-mobile-1.png" media="(max-width: 590px)">
+                <img src="./img/partners-1.png" alt="Логотип Freelands Foundation" class="partners-logo">
+              </picture>
+            </div>
+            <div class="partners-img">
+              <picture>
+                <source srcset="./img/partners-mobile-2.png" media="(max-width: 590px)">
+                <img src="./img/partners-2.png" alt="Логотип Institute for Contemporay Art" class="partners-logo">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="hidden">
+          Контакты
+        </h2>
+        <div class="contacts-wrapper">
+          <div class="contacts__address">
+            <p class="contacts__str">
+              Шоурум &#8470;&nbsp;4
+            </p>
+            <span class="contacts__location">
+              Леонтьевский переулок, дом 5/1
+            </span>
+          </div>
+          <form action="#" class="form" method="POST" aria-label="Заказать обратный звонок">
+            <input type="text" name="name" id="name" class="form__input" placeholder="Имя*" required
+              aria-label="Введите имя">
+            <input type="tel" name="tel" id="tel" class="form__input" placeholder="Телефон*" required
+              aria-label="Введите телефон">
+            <button class="form__btn">
+              <span class="form__btn-main">
+                Заказать обратный звонок
+              </span>
+              <span class="form__btn-reserve">
+                Заказать
+              </span>
+            </button>
+          </form>
+          <div class="contacts__social">
+            <p class="contacts__social-title">
+              Связаться в&nbsp;один клик
+            </p>
+            <ul class="contacts__item list-reset">
+              <li class="contacts__list">
+                <a href="#" class="contacts__link" aria-label="написать в ватсапп">
+                  <svg class="contacts__icon" width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                      <clipPath id="clip191243_648">
+                        <rect width="40.000000" height="40.000000" fill="white" fill-opacity="0" />
+                      </clipPath>
+                    </defs>
+                    <rect width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip191243_648)">
+                      <path
+                        d="M39.37 20C39.37 30.7 30.7 39.37 20 39.37C9.29 39.37 0.62 30.7 0.62 20C0.62 9.29 9.29 0.62 20 0.62C30.7 0.62 39.37 9.29 39.37 20Z"
+                        fill="#30BF39" fill-opacity="1.000000" fill-rule="evenodd" />
+                      <path
+                        d="M25.87 21.75C25.62 21.62 24.31 20.87 24.06 20.81C23.81 20.68 23.62 20.68 23.43 20.93C23.24 21.18 22.68 21.81 22.56 21.93C22.37 22.12 22.24 22.12 21.99 22C21.74 21.87 20.87 21.56 19.87 20.56C19.12 19.81 18.56 18.93 18.43 18.62C18.31 18.37 18.43 18.18 18.56 18.06C18.68 17.93 18.81 17.75 18.99 17.62C19.18 17.5 19.18 17.37 19.31 17.18C19.43 17 19.37 16.87 19.31 16.68C19.24 16.5 18.74 15.18 18.56 14.62C18.37 14.06 18.12 14.18 17.99 14.12C17.81 14.12 17.68 14.06 17.49 14.06C17.24 14.06 16.93 14.18 16.74 14.37C16.49 14.62 15.74 15.25 15.74 16.56C15.74 17.87 16.62 19.25 16.74 19.37C16.87 19.56 18.49 22.43 21.18 23.62C23.87 24.81 23.87 24.43 24.37 24.43C24.87 24.43 25.99 23.81 26.24 23.25C26.49 22.62 26.49 22.06 26.43 22C26.31 22 26.12 21.93 25.87 21.75ZM20.87 28.18C19.12 28.18 17.49 27.68 16.06 26.75L12.68 27.81L13.81 24.56C12.74 23.06 12.12 21.25 12.12 19.37C12.12 14.5 16.06 10.56 20.93 10.56C25.81 10.56 29.68 14.5 29.68 19.37C29.68 24.25 25.74 28.18 20.87 28.18ZM20.87 8.81C15.06 8.81 10.31 13.56 10.31 19.37C10.31 21.31 10.81 23.18 11.81 24.81L9.87 30.5L15.74 28.62C17.31 29.5 19.06 29.93 20.87 29.93C26.68 29.93 31.43 25.18 31.43 19.37C31.43 13.56 26.74 8.81 20.87 8.81Z"
+                        fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__list">
+                <a href="#" class="contacts__link" aria-label="написать в телеграм">
+                  <svg class="contacts__icon" width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                      <clipPath id="clip191243_651">
+                        <rect width="40.000000" height="40.000000" fill="white" fill-opacity="0" />
+                      </clipPath>
+                    </defs>
+                    <rect width="40.000000" height="40.000000" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip191243_651)">
+                      <path
+                        d="M40 20C40 31.04 31.04 40 20 40C8.95 40 0 31.04 0 20C0 8.95 8.95 0 20 0C31.04 0 40 8.95 40 20Z"
+                        fill="#26A5E4" fill-opacity="1.000000" fill-rule="evenodd" />
+                      <path
+                        d="M9.05 19.78L20.71 14.76C26.27 12.45 27.42 12.05 28.17 12.04C28.34 12.03 28.71 12.07 28.95 12.27C29.15 12.43 29.21 12.65 29.23 12.81C29.26 12.96 29.29 13.32 29.27 13.6C28.96 16.76 27.66 24.43 27 27.98C26.72 29.47 26.17 29.98 25.63 30.03C24.47 30.13 23.59 29.26 22.46 28.52L18 25.52C16.03 24.22 17.31 23.51 18.43 22.34C18.73 22.03 23.84 17.38 23.94 16.95C23.95 16.9 23.97 16.71 23.85 16.6C23.73 16.5 23.56 16.53 23.44 16.56C23.26 16.6 20.45 18.46 15 22.14C14.2 22.69 13.48 22.95 12.83 22.94C12.12 22.92 10.74 22.53 9.72 22.2C8.47 21.8 7.47 21.58 7.56 20.89C7.61 20.53 8.1 20.16 9.05 19.78L9.05 19.78Z"
+                        fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <picture>
+          <source srcset="img/logo-mobile.svg" media="(max-width: 590px)">
+          <img src="img/logo-desktop.svg" alt="Логотип Blanchard" class="footer__logo">
+        </picture>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link footer-ok" aria-label="мы в одноклассниках">
+            <svg class="social-link-svg" width="45.000000" height="45.000000" viewBox="0 0 60 60" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M30 0C13.43 0 0 13.43 0 30C0 46.56 13.43 60 30 60C46.56 60 60 46.56 60 30C60 13.43 46.56 0 30 0ZM45.21 33.24C46.61 34.61 48.09 35.89 49.35 37.4C49.9 38.06 50.43 38.75 50.82 39.53C51.39 40.63 50.88 41.85 49.89 41.91L43.74 41.91C42.16 42.04 40.89 41.4 39.83 40.32C38.98 39.45 38.19 38.53 37.37 37.63C37.04 37.27 36.68 36.92 36.26 36.65C35.43 36.1 34.7 36.27 34.22 37.15C33.73 38.04 33.62 39.02 33.57 40.02C33.5 41.46 33.07 41.84 31.61 41.91C28.51 42.06 25.56 41.59 22.82 40.02C20.4 38.64 18.53 36.69 16.9 34.48C13.72 30.18 11.29 25.45 9.11 20.59C8.62 19.5 8.98 18.91 10.18 18.89C12.19 18.85 14.2 18.86 16.2 18.89C17.02 18.9 17.56 19.37 17.87 20.14C18.96 22.81 20.29 25.34 21.95 27.7C22.39 28.32 22.85 28.95 23.49 29.39C24.2 29.88 24.75 29.72 25.08 28.92C25.3 28.42 25.39 27.88 25.44 27.34C25.6 25.48 25.62 23.63 25.34 21.78C25.17 20.62 24.52 19.88 23.37 19.66C22.78 19.55 22.86 19.33 23.15 19C23.65 18.42 24.11 18.06 25.04 18.06L31.98 18.06C33.08 18.27 33.32 18.76 33.47 19.87L33.48 27.58C33.46 28.01 33.69 29.27 34.46 29.55C35.07 29.75 35.47 29.26 35.84 28.87C37.51 27.11 38.69 25.02 39.76 22.86C40.22 21.91 40.63 20.93 41.02 19.94C41.31 19.21 41.77 18.85 42.59 18.86L49.28 18.87C49.48 18.87 49.68 18.87 49.87 18.91C51 19.1 51.31 19.58 50.96 20.68C50.41 22.41 49.34 23.85 48.3 25.29C47.18 26.84 45.99 28.33 44.89 29.88C43.87 31.29 43.95 32.01 45.21 33.24Z"
+                fill="#cacaca" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link footer-vk" aria-label="мы в вконтакте">
+            <svg class="social-link-svg" width="45.000000" height="45.000000" viewBox="0 0 60 60" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="60.000000" height="60.000000" fill="#FFFFFF" fill-opacity="0" />
+              <path
+                d="M60 30C60 46.56 46.56 60 30 60C13.43 60 0 46.56 0 30C0 13.43 13.43 0 30 0C46.56 0 60 13.43 60 30ZM30.18 9.14C24.2 9.14 19.35 13.99 19.35 19.98C19.35 25.96 24.2 30.81 30.18 30.81C36.16 30.81 41.01 25.96 41.01 19.98C41.01 13.99 36.16 9.14 30.18 9.14ZM30.18 24.46C27.71 24.46 25.7 22.45 25.7 19.98C25.7 17.5 27.71 15.5 30.18 15.5C32.65 15.5 34.66 17.5 34.66 19.98C34.66 22.45 32.65 24.46 30.18 24.46ZM34 39.43C38.34 38.55 40.94 36.49 41.08 36.38C42.35 35.37 42.55 33.51 41.53 32.24C40.51 30.97 38.66 30.77 37.39 31.79C37.36 31.81 34.59 33.93 30.03 33.94C25.47 33.93 22.64 31.81 22.61 31.79C21.34 30.77 19.49 30.97 18.47 32.24C17.45 33.51 17.66 35.37 18.93 36.38C19.07 36.5 21.77 38.6 26.23 39.47L20.02 45.96C18.89 47.13 18.92 49 20.09 50.12C20.67 50.68 21.4 50.95 22.14 50.95C22.91 50.95 23.68 50.65 24.26 50.05L30.03 43.9L36.39 50.09C37.54 51.24 39.4 51.24 40.55 50.09C41.7 48.93 41.7 47.07 40.55 45.92L34 39.43Z"
+                fill="#cacaca" fill-opacity="1.000000" fill-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
